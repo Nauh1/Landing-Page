@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,10 @@
     <script src="https://unpkg.com/feather-icons"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     <link rel="stylesheet" href="index.css">
+    <script src="accordion.js"></script>
+
 </head>
+
 <body>
     <header>
         <nav>
@@ -19,35 +23,147 @@
                 <li><a href="#secao4">Contato</a></li>
             </ul>
         </nav>
-        <img src="bonfire.jpg" alt="a">        
+        <img src="bonfire.jpg" alt="a" class="bonfire">
     </header>
 
     <section id="secao1">
         <h1>Bem-vindo à Grimório de Gwyn!</h1>
-        <p><strong>"Na era dos antigos, só havia névoa. Mas aqui, entre fogo e escuridão, escrevemos o que resta."</strong><br><br>
-            O Grimório de Gwyn é uma wiki dedicado à geografia mítica de Lordran, o mundo de Dark Souls I. Este projeto reúne, em detalhes, as cidades, fortalezas, templos e ruínas que compõem o cenário desse universo sombrio e inesquecível.<br>
+        <p><strong>"Na era dos antigos, só havia névoa. Mas aqui, entre fogo e escuridão, escrevemos o que
+                resta."</strong><br><br>
+            O Grimório de Gwyn é uma wiki dedicado à geografia mítica de Lordran, o mundo de Dark Souls I. Este projeto
+            reúne, em detalhes, as cidades, fortalezas, templos e ruínas que compõem o cenário desse universo sombrio e
+            inesquecível.<br>
             Neste grimório, você encontrará:<br>
             🏛️ Origens das cidades: Quem as construiu? Para quê? E o que causou sua queda?<br>
             🌌 Atmosfera e simbolismo: O que cada lugar representa dentro da mitologia de Dark Souls?<br>
             📍 Descrição detalhada das regiões: Caminhos, conexões, arquitetura e ambientação.<br>
-            📚 Fragmentos de lore e mistérios: O que os objetos, inimigos e construções nos contam sobre aquele lugar?<br>
-            🔗 Relações entre os locais: Como Anor Londo se conecta com New Londo? O que Oolacile tem a ver com o Abismo?<br>
-            Com uma abordagem narrativa e investigativa, o Grimório de Gwyn convida você a redescobrir Lordran como um mundo coeso, onde cada pedra caída tem uma história a contar..</p>
+            📚 Fragmentos de lore e mistérios: O que os objetos, inimigos e construções nos contam sobre aquele
+            lugar?<br>
+            🔗 Relações entre os locais: Como Anor Londo se conecta com New Londo? O que Oolacile tem a ver com o
+            Abismo?<br>
+            Com uma abordagem narrativa e investigativa, o Grimório de Gwyn convida você a redescobrir Lordran como um
+            mundo coeso, onde cada pedra caída tem uma história a contar..</p>
     </section>
+
 
     <section id="secao2">
         <h2>Cidades</h2>
-        <div class="ref-mortos-vivos">
-            <h3>Refúgio dos Mortos-vivos</h3>
-            <div class="dec-ref-mortos-vivos">
-              <blockquote>“Aqui começa a maldição. Não com um grito de guerra, mas com o silêncio de uma cela fria e o olhar vazio de um cavaleiro caído.”</blockquote>
-              <p>O Refúgio dos Mortos-vivos é o primeiro cenário de <em>Dark Souls I</em>, servindo como tutorial e primeiro contato com as mecânicas centrais do jogo...</p>
-              <p><strong>Chefes:</strong> Asylum Demon, Stray Demon<br>
-              <strong>Itens importantes:</strong> Estus Flask, Big Pilgrim’s Key, Titanite Slab<br>
-              <strong>Dificuldade:</strong> Fácil 🗡️ 1/5</p>
+
+        <!-- Asilo dos Mortos-vivos -->
+        <div class="card accordion-card">
+            <h3 class="titulo-card accordion-toggle">Asilo dos Mortos-vivos</h3>
+            <div class="dec-padrao-card accordion-content">
+                <blockquote>
+                    <strong>“Aqui começa a maldição. Não com um grito de guerra, mas com o silêncio de uma cela fria e o
+                        olhar vazio de um cavaleiro caído.”</strong>
+                </blockquote>
+                <p>O Refúgio dos Mortos-vivos é o primeiro cenário de <em>Dark Souls I</em>, servindo como tutorial e
+                    primeiro contato com as mecânicas centrais do jogo. O ambiente é isolado, sombrio e oferece uma
+                    introdução tensa ao mundo de Lordran.</p>
+                <p>Apesar da aparente simplicidade, o Asilo contém segredos como o retorno ao local para enfrentar o
+                    Stray Demon e itens importantes escondidos. A ambientação transmite a sensação de abandono e o
+                    início da jornada do Escolhido dos Mortos-vivos.</p>
+                <p><strong>Chefes:</strong> Asylum Demon, Stray Demon<br>
+                    <strong>Itens importantes:</strong> Estus Flask, Big Pilgrim’s Key, Titanite Slab<br>
+                    <strong>Dificuldade:</strong> Fácil 🗡️ 1/5
+                </p>
+                <img src="asilo.jpg" alt="Asilo dos Mortos-vivos" class="asilo">
             </div>
+        </div>
+
+        <!-- Undead Burg -->
+        <div class="card accordion-card">
+            <h3 class="titulo-card accordion-toggle">Undead Burg</h3>
+            <div class="dec-padrao-card accordion-content">
+                <blockquote>
+                    <strong>“O eco dos sinos perdidos ressoa por entre telhados partidos, onde os mortos lutam por uma
+                        alma já esquecida.”</strong>
+                </blockquote>
+                <p>Undead Burg é a primeira área principal após o Refúgio dos Mortos-vivos. Antes uma parte viva e
+                    habitada do reino de Lordran, hoje jaz dominada por cavaleiros enlouquecidos e bandidos, vítimas da
+                    maldição dos mortos-vivos. Seu layout vertical e inimigos posicionados de forma traiçoeira servem
+                    como introdução real ao desafio e à filosofia de level design de <em>Dark Souls</em>.</p>
+                <p>É aqui que o jogador começa a compreender a importância do combate defensivo, da observação do
+                    ambiente e do gerenciamento de recursos. A ponte com o dragão vermelho e o caminho até o Santuário
+                    de Firelink tornam esta área memorável para todos os jogadores.</p>
+                <p>
+                    <strong>Chefes:</strong> Taurus Demon, Capra Demon<br>
+                    <strong>Itens importantes:</strong> Drake Sword (cauda do dragão), Chave do Porão, Ember Normal<br>
+                    <strong>Dificuldade:</strong> Média 🗡️ 2/5
+                </p>
+                <img src="undeadburg.jpg" alt="Undead Burg" class="asilo">
+            </div>
+        </div>
+
+        <!-- Anor Londo -->
+        <div class="card accordion-card">
+            <h3 class="titulo-card accordion-toggle">Anor Londo</h3>
+            <div class="dec-padrao-card accordion-content">
+                <blockquote>
+                    <strong>“A cidade dourada dos deuses resplandece sob o sol eterno — uma ilusão tão frágil quanto
+                        poderosa.”</strong>
+                </blockquote>
+                <p>Anor Londo é o ápice visual e temático de <em>Dark Souls</em>. Construída pelos deuses durante a Era
+                    do Fogo, foi lar do próprio Gwyn, Senhor da Luz Solar. Ao chegar aqui, o jogador sente que entrou em
+                    um novo mundo — belo, silencioso e divinamente arquitetado.</p>
+                <p>No entanto, a beleza esconde segredos: Gwynevere, a deusa que guia o jogador, é apenas uma ilusão
+                    mantida por Gwyndolin para preservar a fé. A verdadeira Anor Londo está mergulhada na escuridão e no
+                    vazio da decadência dos deuses. O combate contra Ornstein e Smough é um dos mais icônicos do jogo,
+                    testando todas as habilidades adquiridas até então.</p>
+                <p>
+                    <strong>Chefes:</strong> Ornstein e Smough<br>
+                    <strong>Itens importantes:</strong> Brasão de Lorde, Anel do Sol Nascente, Set do Cavaleiro de
+                    Prata<br>
+                    <strong>Dificuldade:</strong> Alta 🗡️ 4/5
+                </p>
+                <img src="anorlondo.jpg" alt="Anor Londo" class="asilo">
+            </div>
+        </div>
+
+        <!-- Blighttown -->
+        <div class="card accordion-card">
+            <h3 class="titulo-card accordion-toggle">Blighttown</h3>
+            <div class="dec-padrao-card accordion-content">
+                <blockquote>
+                    <strong>“Aqui, os rejeitados vivem — ou melhor, apodrecem. O veneno é o sangue que corre por essas
+                        tábuas encharcadas.”</strong>
+                </blockquote>
+                <p>Blighttown representa a parte mais visceral e grotesca do mundo de <em>Dark Souls</em>. Uma favela
+                    vertical infestada de doenças, insetos, e estruturas apodrecidas, esta área foi onde muitos
+                    jogadores conheceram o verdadeiro terror técnico e psicológico do jogo, especialmente em versões
+                    mais antigas, com baixa taxa de quadros.</p>
+                <p>Originalmente, Blighttown foi o destino daqueles exilados de Lordran, eventualmente corrompidos pelas
+                    energias do Caos. No fundo, um pântano venenoso desafia o jogador com mobilidade limitada,
+                    culminando no domínio da Bruxa do Caos Quelaag — irmã deformada de uma das criadoras da Primeira
+                    Chama.</p>
+                <p>
+                    <strong>Chefes:</strong> Chaos Witch Quelaag<br>
+                    <strong>Itens importantes:</strong> Fire Keeper Soul, Great Club, Arco do Caos, Set do Piromante<br>
+                    <strong>Dificuldade:</strong> Muito Alta 🗡️ 5/5
+                </p>
+                <img src="blighttown.jpg" alt="Blighttown" class="asilo">
+            </div>
+        </div>
+
+        <div class="card accordion-card">
+          <h3 class="titulo-card accordion-toggle">New Londo Ruins</h3>
+          <div class="dec-padrao-card accordion-content">
+            <blockquote>
+              <strong>“Afundada por medo do Abismo, selada em águas negras para impedir que o mundo fosse engolido pela escuridão.”</strong>
+            </blockquote>
+            <p>New Londo foi outrora uma cidade vibrante [...descrição completa...]</p>
+            <p>
+              <strong>Chefes:</strong> Four Kings<br>
+              <strong>Itens importantes:</strong> Anel de Artorias, Titanite Chunk, Armas do Abismo<br>
+              <strong>Dificuldade:</strong> Alta 🗡️ 4/5
+            </p>
+            <img src="newlondo.jpg" alt="New Londo Ruins" class="asilo">
           </div>
+        </div>
+        
+
     </section>
+
 
     <section id="secao3">
         <h2>Sobre Nós</h2>
@@ -69,4 +185,5 @@
         feather.replace();
     </script>
 </body>
+
 </html>
