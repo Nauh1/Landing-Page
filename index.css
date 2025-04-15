@@ -19,11 +19,13 @@ nav ul {
 nav ul li {
   display: inline;
   margin: 0 15px;
+  
 }
 
 nav ul li a {
-  color: white;
+  color: rgb(219, 178, 102);
   text-decoration: none;
+  font-size: large;
 }
 
 section {
@@ -191,4 +193,14 @@ body {
 
 .accordion-card.open .accordion-toggle::after {
   transform: rotate(-180deg);
+}
+
+footer a {
+  color: rgb(219, 178, 102);   
+  text-decoration: none;
+}
+
+#secao4  a {
+  color:rgb(219, 178, 102); 
+  text-decoration: none;
 }
